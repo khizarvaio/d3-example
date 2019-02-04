@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+    background: #140014;
+}
+
+#title {
+    text-align: center;
+    font-weight: 300;
+    display: block;
+    margin: 2rem 0 1rem;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+#description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#chart {
+    background: linear-gradient(#C7F855 .1%, #b5fa8c, #aaf97c 30%, #fffab1, #fffcd3, #fffab1 60%, #FDE257, #FFEB48, #F5C021, #FF8B19, #F95504);
+    display: block;
+    margin: 2rem auto;
+    font-weight: 600;
+    color: #140014;
+    border-radius: 4px;
+}
+
+.cell:hover {
+    fill: #140014;
+}
+
+#legend {
+    display: block;
+    margin: 5px auto 1rem;
+}
+
+#tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 555;
+    color: rgba(255, 255, 255, 0.84);
+    position: absolute; 
+    transition: all .2s;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+#legendTooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    visibility: hidden;
+}
